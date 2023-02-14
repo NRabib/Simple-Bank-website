@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bank Website</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<header class="mt-8">
+			<h1 class="text-6xl italic font-semibold text-center">Lets Gets Some  <span class="text-blue-600">   Money </span>
+			</h1>
+		</header>
+		<main>
+			<section class="mt-10 ">
+				<div class="grid grid-cols-3 gap-4 w-9/12 mx-auto ">
+					<div class="bg-violet-600 p-8 rounded-lg text-white">
+						<h4 class="text-3xl">DEPOSITE</h4>
+						<br>
+						<h2 class="text-5xl">$ <span id="dpst-total">00</span> </h2>
+					</div>
+					<div class="bg-green-500 p-8 rounded-lg text-white">
+						<h4 class="text-3xl">Withdraw</h4>
+						<br>
+						<h2 class="text-5xl">$ <span id="wdraw-amount">00</span> </h2>
+					</div>
+					<div class="bg-yellow-500 p-8 rounded-lg text-white">
+						<h4  class="text-3xl">Balance</h4>
+						<br>
+						<h2 class="text-5xl">$ <span id="blnse-total">1240</span> </h2>
+					</div>
+					
+				</div>
+				<section>
+					<div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-20">
+						<div class="bg-red-500 p-12 rounded-lg   ">
+							<h3 class="text-4xl text-start text-white">Please Deposite</h3>
+							<input class="w-4/6 p-2 mt-3 rounded-lg focus:outline-none border-solid mb-8"type="text"name=""id="dpst-field"placeholder=" $ Amount You Want To Deposite"/>
+							<br>
+							<button id="btn-dpst" class="bg-sky-800 hover:bg-violet-600  px-4 py-4 text-3xl text-blue-200 font-bold rounded-lg italic ">Deposite</button>
+						</div>
+						<div class="bg-red-500 p-12 rounded-lg   ">
+							<h3 class="text-4xl text-start text-white">Please Withdraw</h3>
+							<input class="w-4/6 p-2 mt-3 rounded-lg focus:outline-none border-solid mb-8"type="text"name=""id="withdraw-field"placeholder=" $ Amount You Want To Withdraw"/>
+							<br>
+							<button id="btn-withdraw" class="bg-sky-800 hover:bg-violet-600  px-4 py-4 text-3xl text-blue-200 font-bold rounded-lg italic ">Withdaw</button>
+						</div>
+				</section>
+				</div>
+			</section>
+		</main>
+		<script src="./js/script.js"></script>
+		<script src="./js/dipossit.js"></script>
+		<script src="./js/widthdraw.js"></script>
+	</body>
+</html>
