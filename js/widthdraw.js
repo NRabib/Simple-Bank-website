@@ -12,7 +12,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
 		alert('please type a number');
 		return;
 	}
-	if (wdraw > totalwdraw) {
+	if (wdraw < totalwdraw) {
 		alert('Insuficieant balance');
 		return;
 	}
